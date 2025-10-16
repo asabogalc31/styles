@@ -1266,7 +1266,7 @@ picture img {
 
 .treatment-image {
     height: 350px;
-    background: linear-gradient(135deg, var(--color-gray-light), var(--color-gray-light));
+    background: linear-gradient(135deg, var(--color-gray-light), var(--color-white));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1787,6 +1787,10 @@ picture img {
 
     .treatment-image {
         height: 250px;
+    }
+
+    .treatment-image img {
+        width: 100%
     }
 
     .treatment-details {
