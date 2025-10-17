@@ -1598,7 +1598,7 @@ picture img {
 }
 
 .faq-item {
-    border: 2px solid var(--color-light);
+    border: 2px solid var(--color-gray-light);
     border-radius: 8px;
     overflow: hidden;
     transition: border-color 0.3s ease;
@@ -1644,7 +1644,7 @@ picture img {
 
 .faq-icon {
     font-size: 20px;
-    color: var(--color-accent);
+    color: var(--color-golden);
     transition: transform 0.3s ease;
 }
 
@@ -1655,7 +1655,7 @@ picture img {
 .faq-content {
     padding: 20px;
     background: white;
-    border-top: 2px solid var(--color-light);
+    border-top: 2px solid var(--color-gray-light);
     color: #666;
     font-size: 15px;
     line-height: 1.6;
