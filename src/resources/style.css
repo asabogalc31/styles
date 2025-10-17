@@ -1492,7 +1492,8 @@ picture img {
      font-weight: 600;
  }
 
-.definition-text p {
+.definition-text p,
+.highlight-box p {
      color: #555;
      font-size: 16px;
      line-height: 1.8;
