@@ -1484,7 +1484,22 @@ picture img {
     line-height: 1.5;
 }
 
-/* What is service Section */
+/* What is service ´Section */
+.definition-text h2 {
+     color: var(--color-purple);
+     font-size: 32px;
+     margin-bottom: 20px;
+     font-weight: 600;
+ }
+
+.definition-text p {
+     color: #555;
+     font-size: 16px;
+     line-height: 1.8;
+     margin-bottom: 15px;
+     text-align: justify;
+ }
+
 .highlight-box {
     background: var(--color-light);
     padding: 20px;
