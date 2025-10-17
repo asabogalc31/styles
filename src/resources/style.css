@@ -1492,7 +1492,14 @@ picture img {
      font-weight: 600;
  }
 
-.definition-text p,
+.definition-text p {
+    color: var(--color-gray-dark);;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
 .highlight-box p {
      background: var(--color-light-beige);
      padding: 20px;
