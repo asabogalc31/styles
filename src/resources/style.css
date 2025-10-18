@@ -1516,16 +1516,22 @@ picture img {
     margin-top: 30px;
 }
 
-.benefit-card {
+.card {
     background: white;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-card
+{
     text-align: center;
     transition: transform 0.3s ease;
 }
 
-.benefit-card:hover {
+.benefit-card:hover,
+.prosthesis-card:hover,
+.age-group-card:hover {
     transform: translateY(-5px);
 }
 
@@ -1599,16 +1605,8 @@ picture img {
 }
 
 .age-group-card {
-    background: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border-top: 4px solid var(--color-golden);
     transition: transform 0.3s ease;
-}
-
-.age-group-card:hover {
-    transform: translateY(-5px);
 }
 
 .age-group-card h3 {
@@ -1649,16 +1647,8 @@ picture img {
 }
 
 .prosthesis-card {
-    background: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border-top: 4px solid var(--color-golden);
     transition: transform 0.3s ease;
-}
-
-.prosthesis-card:hover {
-    transform: translateY(-5px);
 }
 
 .prosthesis-card h3 {
@@ -1753,7 +1743,7 @@ picture img {
     padding: 20px;
     background: white;
     border-top: 2px solid var(--color-gray-light);
-    color: #666;
+    color: ar(--color-gray-dark);
     font-size: 15px;
     line-height: 1.6;
     display: none;
