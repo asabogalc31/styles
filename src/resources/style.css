@@ -1192,7 +1192,7 @@ picture img {
 
 .intro-visual {
     background: var(--color-white);
-    padding: 40px;
+    padding: 20px;
     border-radius: 20px;
     box-shadow: 0 10px 40px rgba(0,0,0,0.1);
 }
@@ -1638,6 +1638,53 @@ picture img {
     left: 0;
     color: var(--color-golden);
     font-weight: bold;
+}
+
+/* Prosthesis Types Section */
+.prosthesis-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.prosthesis-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid var(--color-golden);
+    transition: transform 0.3s ease;
+}
+
+.prosthesis-card:hover {
+    transform: translateY(-5px);
+}
+
+.prosthesis-card h3 {
+    color: var(--color-purple);
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.prosthesis-feature {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+    align-items: flex-start;
+}
+
+.prosthesis-feature-label {
+    font-weight: 600;
+    color: var(--color-purple);
+    min-width: 110px;
+}
+
+.prosthesis-feature-value {
+    color: var(--color-gray-dark);
+    text-align: justify;
+    font-size: 14px;
 }
 
 /* FAQ Section */
