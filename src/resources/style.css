@@ -445,7 +445,7 @@ body {
     cursor: pointer;
 }
 
-.conversion-optimized {
+/*.conversion-optimized {
     background: var(--color-golden);
     color: var(--color-dark-purple);
     font-weight: var(--font-weight-semibold);
@@ -457,7 +457,7 @@ body {
     color: var(--color-white);
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(253, 186, 49, 0.4);
-}
+}*/
 
 picture img {
     width: 100%;
@@ -1753,6 +1753,135 @@ picture img {
 }
 
 /*==============================
+* Contacto - Page
+==============================*/
+/* Locations Grid */
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.location-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.location-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.location-image {
+    height: 400px;
+    background: linear-gradient(45deg, var(--color-light-gray) 0%, #f5f5f5 100%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location-image img {
+    width: 100%;
+    height: auto;
+    color: var(--color-purple);
+    opacity: 0.6;
+}
+
+.location-content {
+    padding: 32px;
+}
+
+.location-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-purple);
+    margin-bottom: 12px;
+    margin-top: var(--spacing-2xl);
+}
+
+.location-address {
+    color: #666;
+    margin-bottom: 24px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.location-info {
+    display: grid;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.info-item svg {
+    width: 18px;
+    height: 18px;
+    color: var(--color-purple);
+    flex-shrink: 0;
+}
+
+.location-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* Map Section */
+.map-section {
+    background: white;
+    padding: 80px 0;
+}
+
+.map-container {
+    background-color: var(--color-light-gray);
+    border-radius: 16px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+.map-placeholder {
+    text-align: center;
+    color: var(--color-purple);
+}
+
+.map-placeholder svg {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 16px;
+    opacity: 0.6;
+}
+
+.map-placeholder h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--color-dark-purple);
+}
+
+.map-placeholder p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/*==============================
 * Footer
 ==============================*/
 .footer-main {
@@ -1984,6 +2113,11 @@ picture img {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px 15px;
     }
+
+    .locations-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -2117,6 +2251,33 @@ picture img {
 
     .step {
         gap: 15px;
+    }
+
+    .map-section, .contact-section {
+        padding: 60px 0;
+    }
+
+    .locations-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-bottom: 60px;
+    }
+
+    .location-card {
+        margin: 0 auto;
+        max-width: 500px;
+    }
+
+    .location-actions {
+        flex-direction: column;
+    }
+
+    .contact-content h3 {
+        font-size: 1.8rem;
+    }
+
+    .map-container {
+        height: 350px;
     }
 
     .footer-logo {
@@ -2266,6 +2427,23 @@ picture img {
 
     .specialization-item {
         padding: 24px 16px;
+    }
+
+    .map-section, .contact-section {
+        padding: 50px 0;
+    }
+
+    .location-content {
+        padding: 24px;
+    }
+
+    .map-container {
+        height: 300px;
+    }
+
+    .locations-grid {
+        grid-template-columns: 1fr;
+        margin-bottom: 50px;
     }
 
     .footer-legal {
