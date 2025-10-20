@@ -381,7 +381,7 @@ body {
 ==============================*/
 .btn {
     display: inline-block;
-    padding: var(--spacing-md) var(--spacing-xl);
+    padding: var(--spacing-sm) var(--spacing-md);
     border-radius: var(--border-radius-lg);
     text-decoration: none;
     font-weight: var(--font-weight-medium);
@@ -431,7 +431,6 @@ body {
 .btn-services-home {
   background: var(--color-purple);
   color: var(--color-white);
-  padding: var(--spacing-md) var(--spacing-lg) !important
 }
 
 .btn-services-home:hover,
@@ -2071,9 +2070,10 @@ picture img {
     }
 
     picture img {
-        width: 70%;
+        width: 100%;
         height: auto;
         border-radius: var(--border-radius-md);
+        margin-top: 15px;
     }
 
     .about-section {
@@ -2226,9 +2226,10 @@ picture img {
     }
 
     picture img {
-        width: 80%;
+        width: 100%;
         height: auto;
         border-radius: var(--border-radius-md);
+        margin-top: 15px;
     }
 
     .header h1 {
